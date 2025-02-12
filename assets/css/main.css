@@ -2622,9 +2622,9 @@ input, select, textarea {
 		}
 
 		#one p {
-			font-size: 14px;
+			font-size: 18px;
 		}
-		
+
 		#header > .inner {
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
