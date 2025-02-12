@@ -104,7 +104,7 @@ input, select, textarea {
 		font-weight: 400;
 		line-height: 1.75em;
 	}
-
+	
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -2621,6 +2621,10 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		#one p {
+			font-size: 14px;
+		}
+		
 		#header > .inner {
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
