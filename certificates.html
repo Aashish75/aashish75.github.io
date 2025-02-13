@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
     <style>
-        /* Center the main content */
+        /* Center content */
         #main {
             max-width: 1000px;
             margin: auto;
@@ -19,25 +19,23 @@
             text-align: center;
         }
 
-        /* Center and align certificates properly */
+        /* Grid layout for certificates */
         .certificates-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Centers the certificates */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ensures alignment */
             gap: 20px;
             max-width: 900px;
             margin: 0 auto;
         }
 
-        .certificates-container .work-item {
-            width: 280px; /* Adjust width for uniform size */
+        .work-item {
             text-align: center;
         }
 
-        /* Ensure Freediving certificate is the same size as others */
+        /* Uniform size for Freediving certificate */
         .freediving-cert {
             width: 280px;
-            height: 200px;
+            height: 240px;
             object-fit: cover;
         }
     </style>
@@ -94,38 +92,4 @@
 
                 <article class="work-item">
                     <a href="images/adventure/padi_ow.jpeg" target="_blank" class="image fit thumb">
-                        <img src="images/adventure/padi_ow.jpeg" alt="PADI Open Water Diver" />
-                    </a>
-                    <h3>PADI Open Water Diver</h3>
-                    <p>Certified by Riyas Jalal | Temple Adventures Divers India</p>
-                </article>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-                <li><a href="MAILTO:aashishmukund@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                <li><a href="https://github.com/Aashish75/" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                <li><a href="https://www.linkedin.com/in/aashishm75/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="files/resume.pdf" target="_blank" class="icon solid fa-file-alt"><span class="label">Resume</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+                        <img src="images/adventure/padi_ow.jpeg" alt
