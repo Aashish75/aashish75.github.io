@@ -9,15 +9,35 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
     <style>
-        /* Ensure main section is properly aligned */
+        /* Center the main content */
         #main {
             max-width: 1000px;
             margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
+        /* Center and align certificates properly */
+        .certificates-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centers the certificates */
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .certificates-container .work-item {
+            width: 280px; /* Adjust width for uniform size */
+            text-align: center;
+        }
+
+        /* Ensure Freediving certificate is the same size as others */
         .freediving-cert {
-            width: 370px;
-            height: 251px;
+            width: 280px;
+            height: 200px;
             object-fit: cover;
         }
     </style>
@@ -37,49 +57,50 @@
     <div id="main">
 
         <!-- Adventure Certificates Section -->
-        <!-- Adventure Certificates Section -->
-					<section id="adventure-certificates">
-    					<h2>Adventure Certifications</h2>
-    						<div class="row">
-							<article class="col-4 col-12-xsmall work-item">
-								<a href="images/adventure/freediving.jpg" target="_blank" class="image fit thumb"><img src="images/adventure/freediving.jpg" alt="Wave 1 Freediver" class="freediving-cert" /></a>
-								<h3>Wave 1 Freediver</h3>
-							<p>Certified by Ramar Acuna | Freediving Academy Philippines</p>
-							</article>
-        					<article class="col-4 col-12-xsmall work-item">
-            				<a href="images/adventure/padi_deep.jpeg" target="_blank" class="image fit thumb"><img src="images/adventure/padi_deep.jpeg" alt="PADI Deep Diving Certification" /></a>
-           					 <h3>PADI Deep Diver</h3>
-           					 <p>Certified by Rajat Tomar | Temple Adventures Divers India</p>
-        					</article>
-        				<article class="col-4 col-12-xsmall work-item">
-         				   <a href="images/adventure/padi_ea.jpeg" target="_blank" class="image fit thumb"><img src="images/adventure/padi_ea.jpeg" alt="Adventure Certification 3" /></a>
-            				<h3>PADI Enriched Air Diver</h3>
-           				 <p>Certified by Riyas Jalal | Temple Adventures Divers India</p>
-        				</article>
-       				 <article class="col-4 col-12-xsmall work-item">
-       				     <a href="images/adventure/padi_adv_ow.jpeg" target="_blank" class="image fit thumb"><img src="images/adventure/padi_adv_ow.jpeg" alt="Adventure Certification 4" /></a>
-        			    <h3>PADI Advanced Open Water Diver</h3>
-      				    <p>Certified by Samuli Virtanen | Bali Dive Resort Amed</p>
-       				 </article>
-       				 <article class="col-4 col-12-xsmall work-item">
-        				    <a href="images/adventure/padi_ow.jpeg" target="_blank" class="image fit thumb"><img src="images/adventure/padi_ow.jpeg" alt="Adventure Certification 5" /></a>
-        				    <h3>PADI Open Water Diver</h3>
-         				   <p>Certified by Riyas Jalal | Temple Adventures Divers India</p>
-        				</article>
-    				</div>
-				</section>
-				<style>
-					#adventure-certificates {
-						margin-top: -50px; /* Adjust spacing */
-					}
-				
-					.freediving-cert {
-						width: 370px;  /* Match smaller certification width */
-						height: 251px; /* Match the height proportionally */
-						object-fit: cover; /* Ensures proper scaling */
-					}
-				</style>
+        <section id="adventure-certificates">
+            <h2>Adventure Certifications</h2>
+            <div class="certificates-container">
+                <article class="work-item">
+                    <a href="images/adventure/freediving.jpg" target="_blank" class="image fit thumb">
+                        <img src="images/adventure/freediving.jpg" alt="Wave 1 Freediver" class="freediving-cert" />
+                    </a>
+                    <h3>Wave 1 Freediver</h3>
+                    <p>Certified by Ramar Acuna | Freediving Academy Philippines</p>
+                </article>
 
+                <article class="work-item">
+                    <a href="images/adventure/padi_deep.jpeg" target="_blank" class="image fit thumb">
+                        <img src="images/adventure/padi_deep.jpeg" alt="PADI Deep Diving Certification" />
+                    </a>
+                    <h3>PADI Deep Diver</h3>
+                    <p>Certified by Rajat Tomar | Temple Adventures Divers India</p>
+                </article>
+
+                <article class="work-item">
+                    <a href="images/adventure/padi_ea.jpeg" target="_blank" class="image fit thumb">
+                        <img src="images/adventure/padi_ea.jpeg" alt="PADI Enriched Air Diver" />
+                    </a>
+                    <h3>PADI Enriched Air Diver</h3>
+                    <p>Certified by Riyas Jalal | Temple Adventures Divers India</p>
+                </article>
+
+                <article class="work-item">
+                    <a href="images/adventure/padi_adv_ow.jpeg" target="_blank" class="image fit thumb">
+                        <img src="images/adventure/padi_adv_ow.jpeg" alt="PADI Advanced Open Water" />
+                    </a>
+                    <h3>PADI Advanced Open Water Diver</h3>
+                    <p>Certified by Samuli Virtanen | Bali Dive Resort Amed</p>
+                </article>
+
+                <article class="work-item">
+                    <a href="images/adventure/padi_ow.jpeg" target="_blank" class="image fit thumb">
+                        <img src="images/adventure/padi_ow.jpeg" alt="PADI Open Water Diver" />
+                    </a>
+                    <h3>PADI Open Water Diver</h3>
+                    <p>Certified by Riyas Jalal | Temple Adventures Divers India</p>
+                </article>
+            </div>
+        </section>
 
     </div>
 
